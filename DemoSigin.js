@@ -11,9 +11,8 @@ import {
   MenuItem,
   Container
 } from '@material-ui/core';
-
-// import { ReactComponent as GoogleIcon } from 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/408px-Google_2015_logo.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/544px-Google_2015_logo.svg.png 2x';
-// // import './DemoSigin.css';
+import SVG from 'react-inlinesvg'
+// import { ReactComponent as GoogleIcon } from './google-2015.svg';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -157,7 +156,8 @@ export default function DemoSigin() {
       <Card className={classes.root} variant='outlined'>
         <CardContent className={classes.paper}>
           <div>
-            {/*<GoogleIcon className={classes.icon} />*/}
+            <SVG src={require("./google-2015.svg")} className={classes.icon} />
+            
           </div>
           <Typography component='h1' variant='h5' className={classes.siginText}>
             Sign in
